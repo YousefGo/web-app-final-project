@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is meta tage infromation -->
+    <meta charset="UTF-8">
+    <!-- uncodide type -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- to make it reponsive with diffrenet devieces -->
+
+    <meta name="description" content="This is Registration administration website , here you can Add 
+    new coruse for admin
+">
+    <!--give descritption of page -->
+
+    <meta name="keywords" content="Add course  , course name , course code">
+        <!-- useful keyouwords to help SEO -->
+
+    <meta name="author" content="Yousef sarkar">
+        <!--Auther of website -->
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+     <script src="js/script.js"></script>
+    <title>ADD New Course </title>
+</head>
+<body>
+    <div class="min_container1">
+        <header class="header_contianer">
+            <h1 class="webname"> Registration administration</h1>
+        </header>
+        <nav class="nav-container">
+            <div class="list">
+                <a href="index.html">   Main   </a>          
+                <a href="add_course.html">  ADD Course<sup>Admin</sup> </a>             
+                <a href="add_courses_for_student.html"> ADD Course<sup>Student</sup> </a>                
+
+            </div>
+        </nav>   
+ <div class="section_contianer">
+     <div class="msg">
+        <H1  >Add new course </H1> <span class="i4"> please confrom all data correct</span>
+     </div>
+    
+ <form action="#" class="form-contianer" onsubmit="return add_course ()">
+     <div>
+         <div>
+            <label class="lbl" >Course Name :</label>
+            <span id="errName"></span>
+         </div>
+      
+        <input type="text" placeholder="Please Enter Course name" id="name">
+
+     </div>
+
+   <div>
+    <label class="lbl" >Course Code :</label>
+    <span  id="errCourseCode"> </span>
+    <input type="text" placeholder="Please Enter Course name" id="courseCode">
+  
+
+   </div>
+
+   <div>
+    <label class="lbl" >level :</label>
+    <span id="errLevel"></span>
+    <select  id="level" >
+        <option value="none"  hidden>Please select the course level…</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+       
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+
+
+
+    </select>
+
+
+  
+  
+
+   </div>
+ 
+ <div>
+    <label class="lbl" >Credit hours :</label>
+   <span id="errCridetHours"></span>
+    <select id="credit_hours">
+        <option value="none" selected>please select amount of credit hours </option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    
+
+
+
+    </select>
+ </div>
+
+ <div>
+    <label class="des_course lbl" >description</label>
+    <span id="errDescrition"></span>
+<textarea  id="description"  placeholder="add description here"></textarea>  
+
+   </div>
+
+   
+   <div>
+    <label  class="lbl">prerequisite course :</label>
+    <span id="errPre"></span>
+    <input type="text" placeholder="Please Enter prerequisite if exit" id="pre">
+  
+
+   </div>
+  
+   
+    <button type="submit">ADD</button>
+
+ </form>
+ </div>
+ <footer class="footer_container">
+    &copy;	yosuef0sarkar@gmail.com
+</footer>
+   
+    </div> 
+
+   
+   
+    
+</body>
+</html>

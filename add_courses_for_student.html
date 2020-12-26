@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This is meta tage infromation -->
+    <meta charset="UTF-8">
+    <!-- uncodide type -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- to make it reponsive with diffrenet devieces -->
+
+    <meta name="description" content="This is Registration administration website , here student 
+    can add new page 
+">
+    <!--give descritption of page -->
+
+    <meta name="keywords" content="Registration,course , cs , programming,Student ">
+        <!-- useful keyouwords to help SEO -->
+
+    <meta name="author" content="Yousef sarkar">
+        <!--Auther of website -->
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+
+     <script src="js/script.js"></script>
+
+    <title>Steudnt Add New course </title>
+</head>
+<body>
+    <div class="min_container1">
+        <header class="header_contianer">
+            <h1 class="webname"> Registration administration</h1>
+        </header>
+        <nav class="nav-container">
+            <div class="list">
+                <a href="index.html">   Main   </a>          
+                <a href="add_course.html">  ADD Course<sup>Admin</sup> </a>             
+                <a href="add_courses_for_student.html"> ADD Course<sup>Student</sup> </a>                
+
+            </div>
+        </nav>   
+ <div class="section_contianer">
+     <div class="msg">
+        <H1>Add new course </H1> <span class="i4"> Dear Sutdent Please make sure of your entry</span>
+     </div>
+    
+ <form  class="form-contianer" onsubmit="return validtionCourseForStudent()">
+    <div>
+        <label class="lbl" >Student ID</label> 
+        <span id="sIdErr"></span>
+        <input type="text" placeholder="please enter your Uinversity ID Number" id="sID">
+    </div>
+   
+
+    <div>
+        <label class="lbl" >Student name </label>
+        <span id="sNameErr"></span>
+        <input type="text" placeholder="enter your full name " id="sName">
+    
+    </div>
+
+
+    <div>
+        <label class="lbl" >Acadimic email </label>
+        <span id="sEmailErr"></span>
+        <input type="text" placeholder="enter your email " id="sEmail">
+        
+    </div>
+
+
+
+
+    
+<div>
+<label class="lbl" >Course code 1 * :</label>
+<span id="msgCode1"></span>
+<select  id="courseCode1" > 
+<option value="none" selected hidden>please select code of course you want to add  </option>
+<option value="14011101-4">14011101-4 : Computer programming</option>
+<option value="14011102-4
+">14011102-4 :Object orientd Programming
+</option>
+<option value="14012301-3">14012301-3 : Data Base 
+</option>
+<option value="14012401-3">14012401-3 : Data Strcture 
+</option>
+
+<option value="14012401-3">14012401-3 : Alogrhtims 
+</option>
+
+<option value="14012401-3">14012401-3 : Data Base || 
+</option>
+
+
+
+</select>
+</div>
+
+
+<div>
+<label  class="lbl">Course code 2 * :</label>
+<span id="msgCode2"></span>
+<select id="courseCode2"> 
+<option value="none" hidden selected>please select code of course you want to add  </option>
+<option value="14011101-4">14011101-4 : Computer programming</option>
+<option value="14011102-4">14011102-4 :Object orientd Programming
+</option>
+<option value="14012301-3">14012301-3 : Data Base 
+</option>
+<option value="14012401-3">14012401-3 : Data Strcture 
+</option>
+
+<option value="14012401-3">14012401-3 : Alogrhtims 
+</option>
+
+<option value="14012401-3">14012401-3 : Data Base || 
+</option>
+
+</select>
+</div>
+
+<div>
+<label class="lbl" >Course code 3 :</label>
+<span id="msgCode3"></span>
+<select  id="courseCode3"> 
+<option value="none" hidden selected>please select code of course you want to add  </option>
+<option value="14011101-4">14011101-4 : Computer programming</option>
+<option value="14011102-4
+">14011102-4 :Object orientd Programming
+</option>
+<option value="14012301-3">14012301-3 : Data Base 
+</option>
+<option value="14012401-3">14012401-3 : Data Strcture 
+</option>
+<option value="14012401-3">14012401-3 : Alogrhtims 
+</option>
+
+<option value="14012401-3">14012401-3 : Data Base || 
+</option>
+
+
+
+
+</select>
+</div>
+
+
+<div>
+<label class="lbl" >Course code 4 :</label>
+<span id="msgCode4"></span>
+<select id="courseCode4" > 
+<option value="none" hidden selected>please select code of course you want to add  </option>
+<option value="14011101-4">14011101-4 : Computer programming</option>
+<option value="14011102-4">14011102-4 :Object orientd Programming
+</option>
+<option value="14012301-3">14012301-3 : Data Base 
+</option>
+<option value="14012401-3">14012401-3 : Data Strcture 
+</option>
+
+<option value="14012401-3">14012401-3 : Alogrhtims 
+</option>
+
+<option value="14012401-3">14012401-3 : Data Base || 
+</option>
+
+
+
+
+</select>
+</div>
+  
+   
+    <button type="submit">ADD</button>
+
+ </form>
+ </div>
+ <footer class="footer_container">
+    &copy;	yosuef0sarkar@gmail.com
+</footer>
+   
+    </div> 
+
+   
+   
+    
+</body>
+</html>
